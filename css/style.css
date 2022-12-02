@@ -1,0 +1,220 @@
+html {
+    font-size: 16px;
+}
+
+:root {
+    --rosa: #ef476f;
+    --rosa-escuro: #f51c4f;
+    --amarelo: #ffd166;
+    --verde: #06d6a0;
+    --azul-claro: #118ab2;
+    --azul-escuro: #073b4c;
+    --branco: #edf6f9;
+
+}
+
+body {
+    background-color: var(--azul-claro);
+    font-family: 'Montserrat', sans-serif;
+    overflow: scroll;
+}
+
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.titulo {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 2rem;
+    font-weight: 600;
+    color: var(--verde);
+}
+
+.container {
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.formulario {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4rem;
+    background-color: var(--branco);
+    height: 30vh;
+    width: 30vw;
+    border-radius: .4rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.tarefa__principal {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: var(--azul-escuro);
+}
+
+.input__principal {
+
+    padding: .5rem;
+    border-radius: .4rem;
+    background-color: var(--azul-claro);
+    font-weight: 400;
+    border: none;
+    text-align: center;
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.5s;
+}
+
+.input__principal::placeholder {
+    color: var(--azul-escuro);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.input__principal:focus {
+    outline: 0;
+    box-shadow: 0;
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+}
+
+
+.cadastrar__principal {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    border: none;
+    padding: .5rem;
+    width: 30%;
+    border-radius: .3rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.cadastrar__principal:hover {
+    background-color: var(--azul-claro);
+    color: var(--azul-escuro);
+    font-weight: 600;
+   
+
+}
+
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: justify;
+    color: var(--azul-escuro);
+    font-weight: 500;
+    position: fixed;
+    top: 7rem;
+    bottom: 6rem;
+    padding: 2%;
+    overflow: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+
+
+}
+
+
+.lista::-webkit-scrollbar {
+    width: 15px;
+    background-color: var(--verde);
+    border-radius: 1rem;
+
+
+}
+
+.lista::-webkit-scrollbar-thumb {
+    background-color: var(--azul-escuro);
+    border-radius: .5rem;
+
+
+}
+
+
+
+.lista__item {
+    background-color: var(--branco);
+    padding: 1.2rem;
+    border-radius: .4rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 30vw;
+    color: var(--azul-escuro);
+    font-weight: 600;
+
+
+
+
+}
+
+.removido {
+    text-decoration: line-through var(--rosa);
+    font-weight: 600;
+    color: var(--rosa);
+
+}
+
+
+.btn_deletar {
+    background-color: var(--rosa);
+    border-radius: .9rem;
+    border: none;
+    text-align: center;
+    padding: .3rem;
+    margin-left: .2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+
+
+}
+
+.btn_deletar:hover {
+    background-color: var(--rosa-escuro);
+
+}
+
+.checkbox_concluido {
+    text-align: center;
+    cursor: pointer;
+}
+
+.red_border {
+
+    background-color: var(--rosa-escuro);
+
+
+}
+
+.red_border::placeholder {
+    color: var(--branco);
+}
+
+span {
+    color: var(--rosa);
+}
